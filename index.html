@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Pardhi| Digital Portfolio</title>
+    <title>Harsh Pardhi | Platform Engineer & DevOps Specialist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Required Styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -22,27 +29,43 @@
 
     <!-- Get Started With My Portfolio -->
     <div class="homepage">
-        <!-- Fixed Left Sidebar -->
-        <aside class="sidebar">
+        <!-- Sticky Glassmorphism Header -->
+        <header class="glass-header">
+            <div class="logo">
+                <h1>Harsh Pardhi</h1>
+            </div>
+
+            <!-- Top Navigation Menu -->
+            <nav class="top-nav">
+                <a href="#home">Home</a>
+                <a href="#about">Who I Am</a>
+                <a href="#experience">What I've Done</a>
+                <a href="#tools-tech">Technologies</a>
+            </nav>
+
+
+            <a href="#contacts" class="contact-icon" title="Contact Me">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+        </header>
+
+        <!-- Toggleable Glassmorphism Sidebar -->
+        <aside class="sidebar glass" id="sidebar">
+            <div class="sidebar-close">
+                <button class="close-btn" id="closeSidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
             <div class="user-meta">
                 <div class="user-image">
-                    <img src="assets/images/userharsh.png"  alt="user-image">
+                    <img src="assets/images/userharsh.png" alt="Harsh Pardhi">
                 </div>
                 <div class="social-links">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://github.com/HP04Harsh">
+                            <a href="https://github.com/HP04Harsh" target="_blank">
                                 <i class="bi bi-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/harsh-pardhi">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com">
-                                <i class="bi bi-instagram"></i>
                             </a>
                         </li>
                     </ul>
@@ -70,6 +93,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="#tools-tech">
+                            <i class="bi bi-tools"></i>
+                            Tools & Tech Stack
+                        </a>
+                    </li>
+                    <li>
                         <a href="#experience">
                             <i class="bi bi-award-fill"></i>
                             Experience
@@ -91,32 +120,27 @@
             </nav>
 
             <div class="copyright">
-                <p>All Rights Reserved @2024-25 Harsh Pardhi.</p>
+                <p>© 2026 @ Harsh Pardhi. All Rights Reserved</p>
             </div>
         </aside>
 
-    
+
         <div class="content" data-bs-spy="scroll">
-            <div class="hero-section" id="home">
+            <div class="hero-section parallax" id="home">
                 <div class="overlay">
-                    <button class="sidebar-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
                     <h2>Welcome to My Profile</h2>
                     <h3>
                         <span id="typed"></span>
                     </h3>
                     <p>
-                        I am an skilled IT specialist with experience in database management, 
-                        networking, and website design. I can engage with a wide spectrum of 
-                        clients because I have great technical capabilities and excellent
-                         interpersonal skills. I'm ready for a challenge to help me develop 
-                         and advance my IT abilities. Utilizing my technical expertise to help 
-                         other people and organizations is my greatest life passion.
+                        Platform Engineer & DevOps Specialist with 2+ years of hands-on experience in building
+                        scalable, reliable, and automated cloud solutions. Expertise in multi-cloud platforms,
+                        containerization, CI/CD pipelines, infrastructure as code, and observability. Passionate
+                        about designing resilient systems that drive innovation and operational excellence.
                     </p>
-                  <a href="https://www.linkedin.com/in/harsh-pardhi">  <button class="btn">Connect me on <i class="bi bi-linkedin"></i></button></a>
+                    <a href="https://github.com/HP04Harsh" target="_blank">
+                        <button class="btn">View My GitHub <i class="bi bi-github"></i></button>
+                    </a>
 
                     <span class="get-started">
                         <i class="bi bi-arrow-bar-down"></i>
@@ -125,7 +149,7 @@
             </div>
 
             <!-- Start About Me Section -->
-            <div class="about-me" id="about-me">
+            <div class="about-me glass-section" id="about-me">
                 <div class="section-title">
                     <h1>About Me</h1>
                     <h3>Who I am?</h3>
@@ -136,64 +160,59 @@
                         <div class="col-md-12 col-lg-6">
                             <div class="left-part">
                                 <h2>
-                                    I'm <span>Harsh Pardhi</span>, Software Developer.
+                                    I'm <span>Harsh Pardhi</span>, Platform Engineer & DevOps Specialist.
                                 </h2>
                                 <p>
-                                    I’m a skilled IT specialist 💻 with 
-                        expertise in database management, networking, 
-                        and website design 🌐, with a strong passion for
-                        
-                        software and mobile app development 📱. With solid
-                         experience in Java, DSA, Python 🐍, and Azure Administration
-                          ☁️, I thrive on tackling complex challenges and driving innovation.
-                           My technical prowess extends to Data Science 📊 and Power BI 📈,
-                            enabling me to transform raw data into meaningful insights. 
-                            Equipped with both technical and exceptional interpersonal skills, 
-                            
-                            I connect with a wide spectrum of clients 🤝, always eager to help
-                            
-                            organizations grow and succeed. My greatest passion lies in using 
-                            technology to solve real-world problems and continuously evolving in the ever-changing IT
-                             landscape 🌱. 
-                            Ready for the next challenge to expand my skills and make an impact! 🚀
+                                    I'm a skilled Platform Engineer 💻 with expertise in multi-cloud platforms,
+                                    containerization, and infrastructure automation 🌐. With a strong passion for
+                                    DevOps, CI/CD pipelines 🚀, and observability 📊, I thrive on building scalable
+                                    and reliable systems. My technical prowess extends to Kubernetes ☸️, Terraform,
+                                    Ansible, and monitoring tools like Prometheus and Grafana 📈, enabling me to
+                                    design resilient cloud-native architectures. Equipped with both technical expertise
+                                    and exceptional problem-solving skills, I connect infrastructure with innovation 🤝,
+                                    always eager to help organizations scale and succeed. My greatest passion lies in
+                                    automating workflows, optimizing cloud resources, and continuously evolving in the
+                                    ever-changing DevOps landscape 🌱. Ready for the next challenge to expand my skills
+                                    and make an impact! 🚀
                                 </p>
                                 <p>
-                                    I am a highly motivated and results-oriented individual with excellent
-                                     communication and interpersonal skills. I am also a team player and I
-                                      am always willing to go the extra mile. I am confident that I have the
-                                       skills and abilities necessary to be a valuable asset to your team.
-
+                                    I am a highly motivated and results-oriented engineer with excellent communication
+                                    and collaboration skills. I am also a team player and I am always willing to go the
+                                    extra mile. I am confident that I have the skills and abilities necessary to be a
+                                    valuable asset to your team.
                                 </p>
                                 <div class="download">
-                                    <button class="btn" onclick="window.open('assets/pdf/Harsh Resume Updated.pdf')">Download CV</button>
+                                    <button class="btn"
+                                        onclick="window.open('assets/pdf/Harsh Resume Updated.pdf')">Download
+                                        CV</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <div class="right-part">
-                                <div class="box">
+                                <div class="box glass">
                                     <i class="bi bi-code"></i>
                                     <p>FullStack Development</p>
                                 </div>
-                                <div class="box">
+                                <div class="box glass">
                                     <i class="bi bi-phone"></i>
                                     <p>Mobile App Development</p>
                                 </div>
-                                <div class="box">
-                                    <i class="bi bi-palette"></i>
-                                    <p>Graphic Designing</p>
+                                <div class="box glass">
+                                    <i class="bi bi-bar-chart"></i>
+                                    <p>Data Analytics</p>
                                 </div>
-                                <div class="box">
-                                    <i class="bi bi-envelope"></i>
+                                <div class="box glass">
+                                    <i class="bi bi-cloud"></i>
+                                    <p>Multi-Cloud Platforms</p>
+                                </div>
+                                <div class="box glass">
+                                    <i class="bi bi-gear"></i>
+                                    <p>DevOps Engineering</p>
+                                </div>
+                                <div class="box glass">
+                                    <i class="bi bi-graph-up"></i>
                                     <p>Power BI Expert</p>
-                                </div>
-                                <div class="box">
-                                    <i class="bi bi-person-fill"></i>
-                                    <p>System Administration</p>
-                                </div>
-                                <div class="box">
-                                    <i class="bi bi-pc-display"></i>
-                                    <p>Azure Cloud</p>
                                 </div>
                             </div>
                         </div>
@@ -201,19 +220,19 @@
                             <div class="full-part">
                                 <div class="box">
                                     <p>Age</p>
-                                    <p>23 Years</p>
+                                    <p>24 Years</p>
                                 </div>
                                 <div class="box">
                                     <p>Location</p>
-                                    <p>Nagpur, Maharahstra</p>
+                                    <p>Gondia, Maharashtra</p>
                                 </div>
                                 <div class="box">
                                     <p>Education</p>
-                                    <p>Computer Application</p>
+                                    <p>Bachelor of Computer Application</p>
                                 </div>
                                 <div class="box">
                                     <p>Experience</p>
-                                    <p>1+ Years</p>
+                                    <p>2+ Years in Technical & Engineering Projects</p>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +241,7 @@
             </div>
 
             <!-- Start My Skills Section -->
-            <div class="skills" id="skills">
+            <div class="skills glass-section" id="skills">
                 <div class="section-title">
                     <h1>My Skills</h1>
                     <h3>What I Do?</h3>
@@ -234,56 +253,261 @@
                             <img src="assets/images/skills.svg" alt="skills-image">
                         </div>
                         <div class="col-md-12 col-lg-6">
-                            <p>A software engineer is an expert in object-oriented programming, 
-                                design patterns, and data structures. They are proficient in Python,
-                                 Java, C++, and cloud computing platforms.</p>
+                            <p>A Platform Engineer specializing in cloud-native architectures, containerization,
+                                and infrastructure automation. Proficient in Kubernetes, Terraform, Ansible, CI/CD
+                                pipelines, and multi-cloud platforms (AWS, Azure, GCP). Expert in building scalable,
+                                reliable, and observable systems.</p>
                             <h6>
-                                <span>Back-End Development</span>
+                                <span>Backend Development</span>
                                 <span>80%</span>
                             </h6>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            <div class="progress" role="progressbar" aria-label="Backend Development" aria-valuenow="80"
                                 aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 95%"></div>
+                                <div class="progress-bar" style="width: 80%"></div>
                             </div>
                             <h6>
-                                <span>Front-End Development</span>
+                                <span>Frontend Development</span>
                                 <span>90%</span>
                             </h6>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            <div class="progress" role="progressbar" aria-label="Frontend Development"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <h6>
+                                <span>Android Development</span>
+                                <span>60%</span>
+                            </h6>
+                            <div class="progress" role="progressbar" aria-label="Android Development" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                            <h6>
+                                <span>Cloud Solutions</span>
+                                <span>90%</span>
+                            </h6>
+                            <div class="progress" role="progressbar" aria-label="Cloud Solutions" aria-valuenow="90"
                                 aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" style="width: 90%"></div>
                             </div>
                             <h6>
-                                <span>Android</span>
-                                <span>85%</span>
+                                <span>Data Analytics</span>
+                                <span>80%</span>
                             </h6>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            <div class="progress" role="progressbar" aria-label="Data Analytics" aria-valuenow="80"
                                 aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                            <h6>
-                                <span>Digital Marketing</span>
-                                <span>79%</span>
-                            </h6>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                            <h6>
-                                <span>Graphic Designing</span>
-                                <span>79%</span>
-                            </h6>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%"></div>
                             </div>
 
-                            <button class="btn"><i class="fa fa-linkedin" aria-hidden="true">Linkedin Profile</i></button>
+                            <a href="https://github.com/HP04Harsh" target="_blank">
+                                <button class="btn">View GitHub Profile <i class="bi bi-github"></i></button>
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- NEW: Tools & Tech Stack Section -->
+            <div class="tools-tech glass-section" id="tools-tech">
+                <div class="section-title">
+                    <h1>Tools & Tech</h1>
+                    <h3>My Technology Stack</h3>
+                </div>
+
+                <div class="container">
+                    <div class="tools-grid">
+                        <!-- Version Control & OS -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-git"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-ubuntu"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-terminal"></i>
+                            <span>Bash</span>
+                        </div>
+                        <!-- Containers & Orchestration -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-box-seam"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-hexagon"></i>
+                            <span>Kubernetes</span>
+                        </div>
+
+                        <!-- Configuration & IaC -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-file-earmark-code"></i>
+                            <span>Ansible</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-layers"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-shield-lock"></i>
+                            <span>Vault</span>
+                        </div>
+
+                        <!-- Monitoring & Observability -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-graph-up"></i>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-search"></i>
+                            <span>Elasticsearch</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-funnel"></i>
+                            <span>Logstash</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-pie-chart"></i>
+                            <span>Kibana</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-diagram-3"></i>
+                            <span>OpenTelemetry</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-activity"></i>
+                            <span>Jaeger</span>
+                        </div>
+
+                        <!-- Messaging & Caching -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-broadcast"></i>
+                            <span>Kafka</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-envelope-paper"></i>
+                            <span>RabbitMQ</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-lightning"></i>
+                            <span>Redis</span>
+                        </div>
+
+                        <!-- Databases -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <!-- Testing & Chaos -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-speedometer2"></i>
+                            <span>k6</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-lightning-charge"></i>
+                            <span>JMeter</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-bug"></i>
+                            <span>LitmusChaos</span>
+                        </div>
+
+                        <!-- Programming Languages -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-code-slash"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-cup-hot"></i>
+                            <span>Java</span>
+                        </div>
+
+                        <!-- Automation & Integration -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-diagram-2"></i>
+                            <span>n8n</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-robot"></i>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-cpu"></i>
+                            <span>Ollama</span>
+                        </div>
+
+                        <!-- Data & Analytics -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-broadcast-pin"></i>
+                            <span>Apache Kafka</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-wind"></i>
+                            <span>Airflow</span>
+                        </div>
+
+                        <!-- Microsoft Ecosystem -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-microsoft"></i>
+                            <span>Power Platform</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-windows"></i>
+                            <span>M365</span>
+                        </div>
+
+                        <!-- Cloud Platforms -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-cloud"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-cloud-fill"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-clouds"></i>
+                            <span>GCP</span>
+                        </div>
+
+                        <!-- Additional Tools -->
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-file-code"></i>
+                            <span>YAML</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-braces"></i>
+                            <span>JSON</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-hdd-network"></i>
+                            <span>Networking</span>
+                        </div>
+                        <div class="tool-capsule glass">
+                            <i class="bi bi-server"></i>
+                            <span>System Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Start My Education and Experince Section -->
             <div class="experience" id="experience">
@@ -323,7 +547,7 @@
                                             Gondia-MH
                                         </p>
                                         <p>
-                                           Dhote bandhu Science College, Gondia
+                                            Dhote bandhu Science College, Gondia
                                         </p>
                                     </div>
                                 </div>
@@ -343,7 +567,10 @@
                                             Tools- M365, ServiceNow, Azure Cloud, PowerShell
                                         </p>
                                         <p>
-                                            Currently leading on-prem to M365 cloud migration ☁️, streamlining processes for seamless transitions. Resolving complex customer queries through ServiceNow 🔧, ensuring top-notch support. Passionate about optimizing cloud solutions and enhancing user experience 💡.
+                                            Currently leading on-prem to M365 cloud migration ☁️, streamlining processes
+                                            for seamless transitions. Resolving complex customer queries through
+                                            ServiceNow 🔧, ensuring top-notch support. Passionate about optimizing cloud
+                                            solutions and enhancing user experience 💡.
                                         </p>
                                     </div>
                                 </div>
@@ -358,12 +585,12 @@
                                             Tools- Adobe Photoshop, CoralDraw, Figma
                                         </p>
                                         <p>
-                                                                            Major in UI Design, UX Design, Image COllage, Product Images<br>
-        
+                                            Major in UI Design, UX Design, Image COllage, Product Images<br>
+
                                         </p>
                                     </div>
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -381,9 +608,9 @@
                 <div class="button-group filter-button-group">
                     <button class="btn active" data-filter="*">All</button>
                     <button class="btn" data-filter=".webdesign">Websites</button>
-                    <button class="btn" data-filter=".apps">Apps</button>
-                    <button class="btn" data-filter=".graphic">Designs</button>
-                    <button class="btn" data-filter=".certificates">Certificates</button>
+                    <button class="btn" data-filter=".apps">Mobile Apps</button>
+                    <button class="btn" data-filter=".devops">DevOps Projects</button>
+                    <button class="btn" data-filter=".certificates">Certifications</button>
                 </div>
 
                 <div class="container">
@@ -398,164 +625,158 @@
                                 </a>
                             </div>
                         </div>
-                       
-                                <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                    <div class="box">
-                                        <div class="img">
-                                            <img src="assets/images/hp.png" alt="certificates">
-                                        </div>
-                                        
-                                            <i class="bi bi-link"></i>
-                                        </a>
-                                    </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/hp.png" alt="certificates">
                                 </div>
 
-                                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                            <div class="box">
-                                                <div class="img">
-                                                    <img src="assets/images/oracle.png" alt="certificates">
-                                                </div>
-                                               
-                                                    <i class="bi bi-link"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        
-                                                <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                    <div class="box">
-                                                        <div class="img">
-                                                            <img src="assets/images/genai.png" alt="certificates">
-                                                        </div>
-                                                       
-                                                            <i class="bi bi-link"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                
-                                                   
-                                                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                            <div class="box">
-                                                                <div class="img">
-                                                                    <img src="assets/images/ms.png" alt="certificates">
-                                                                </div>
-                                                              
-                                                                    <i class="bi bi-link"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    
-                                                                <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                                    <div class="box">
-                                                                        <div class="img">
-                                                                            <img src="assets/images/cisco.png" alt="certificates">
-                                                                        </div>
-                                                                     
-                                                                            <i class="bi bi-link"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                                            <div class="box">
-                                                                                <div class="img">
-                                                                                    <img src="assets/images/ws.png" alt="certificates">
-                                                                                </div>
-                                                                              
-                                                                                    <i class="bi bi-link"></i>
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                   
-                                                                                <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                                                    <div class="box">
-                                                                                        <div class="img">
-                                                                                            <img src="assets/images/sheet.png" alt="certificates">
-                                                                                        </div>
-                                                                                       
-                                                                                            <i class="bi bi-link"></i>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                              
-                                                                                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                                                            <div class="box">
-                                                                                                <div class="img">
-                                                                                                    <img src="assets/images/ibm.png" alt="certificates">
-                                                                                                </div>
-                                                                                               
-                                                                                                    <i class="bi bi-link"></i>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                       
-                                                                                            <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
-                                                                                                <div class="box">
-                                                                                                    <div class="img">
-                                                                                                        <img src="assets/images/flip.png" alt="certificates">
-                                                                                                    </div>
-                                                                                                   
-                                                                                                        <i class="bi bi-link"></i>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-6 col-lg-4 element-item web-design" data-category="web-design">
-                                                                                                <div class="box">
-                                                                                                    <div class="img">
-                                                                                                        <img src="assets/images/web.png" alt="web-design">
-                                                                                                    </div>
-                                                                                                   
-                                                                                                        <i class="bi bi-link"></i>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-6 col-lg-4 element-item graphic" data-category="graphic">
-                                                                                                <div class="box">
-                                                                                                    <div class="img">
-                                                                                                        <img src="assets/images/gd.png" alt="graphic">
-                                                                                                    </div>
-                                                                                                   
-                                                                                                        <i class="bi bi-link"></i>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                                  
-                                                                                     
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/oracle.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/genai.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
 
 
-                        
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/ms.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/cisco.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/ws.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/sheet.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/ibm.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 element-item certificates" data-category="certificates">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/flip.png" alt="certificates">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 element-item web-design" data-category="web-design">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/webs.png" alt="web-design">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 element-item graphic" data-category="graphic">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="assets/images/gd.png" alt="graphic">
+                                </div>
+
+                                <i class="bi bi-link"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
                         <div class="col-md-6 col-lg-4 element-item apps" data-category="apps">
                             <div class="box">
                                 <div class="img">
-                                
-                                        <img src="assets/images/College Connect App.png"
-                                     target="_blank"
-                                     alt="web-design" 
-                                     >
-                                   
+
+                                    <img src="assets/images/College Connect App.png" target="_blank" alt="web-design">
+
                                 </div>
                             </div>
                         </div>
-                          <a href="https://github.com/harshpardhi04/portfolio/blob/main/index.md">
-                         <div class="col-md-6 col-lg-4 element-item apps" data-category="apps">
-                            <div class="box">
-                                <div class="img">
-                                  
-                                        <img src="assets/images/Now!.jpg"
-                                     target="_blank"
-                                     alt="web-design" 
-                                     >
-                                  
+                        <a href="https://github.com/harshpardhi04/portfolio/blob/main/index.md">
+                            <div class="col-md-6 col-lg-4 element-item apps" data-category="apps">
+                                <div class="box">
+                                    <div class="img">
+
+                                        <img src="assets/images/Now!.jpg" target="_blank" alt="web-design">
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                                </a>
-                    
+                        </a>
+
                         <div class="col-md-6 col-lg-4 element-item graphic" data-category="graphic">
                             <div class="box">
                                 <div class="img">
                                     <img src="assets/images/11.png" alt="web-design">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 element-item graphic" data-category="graphic">
@@ -563,16 +784,16 @@
                                 <div class="img">
                                     <img src="assets/images/12.png" alt="web-design">
                                 </div>
-                                
+
                             </div>
                         </div>
-                        
+
                         <div class="col-md-6 col-lg-4 element-item graphic" data-category="graphic">
                             <div class="box">
                                 <div class="img">
                                     <img src="assets/images/13.png" alt="web-design">
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -580,7 +801,7 @@
             </div>
 
             <!-- Start Contact Me Section -->
-            <div class="contacts" id="contacts">
+            <div class="contacts glass-section" id="contacts">
                 <div class="section-title">
                     <h1>Contact Me</h1>
                     <h3>Get In Touch</h3>
@@ -590,47 +811,74 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-5">
                             <div class="left-part">
-                                <div class="box">
+                                <div class="box glass">
                                     <i class="bi bi-telephone-forward"></i>
                                     <h3>Call Me On</h3>
                                     <p>+91 95296 67349</p>
                                 </div>
-                                <div class="box">
+                                <div class="box glass">
                                     <i class="bi bi-envelope"></i>
                                     <h3>Email Me At</h3>
                                     <p>harshpardhi477@gmail.com</p>
                                 </div>
-                                <div class="box">
+                                <div class="box glass">
                                     <i class="bi bi-geo-alt"></i>
                                     <h3>Location</h3>
-                                    <p>Nagpur, India</p>
+                                    <p>Gondia, Maharashtra, India – 441601</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-7">
                             <div class="right-part">
-                                <form>
+                                <form id="contactForm">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Your Name ..." />
+                                        <input type="text" class="form-control" id="contactName"
+                                            placeholder="Enter Your Name ..." required />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Your Phone Number ..." />
+                                        <input type="tel" class="form-control" id="contactPhone"
+                                            placeholder="Enter Your Phone Number ..." />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Your Email ..." />
+                                        <input type="email" class="form-control" id="contactEmail"
+                                            placeholder="Enter Your Email ..." required />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Subject ..." />
+                                        <input type="text" class="form-control" id="contactSubject"
+                                            placeholder="Enter Subject ..." required />
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message ..."></textarea>
+                                        <textarea class="form-control" id="contactMessage"
+                                            placeholder="Your Message ..." required></textarea>
                                     </div>
                                     <div class="submit">
-                                        <button type="submit" class="btn" onclick="window.open('https://mail.google.com/')">Send Email <i class="bi bi-send"></i></button>
+                                        <button type="button" class="btn" id="sendEmailBtn">Send Email <i
+                                                class="bi bi-send"></i></button>
                                     </div>
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Community & Coding Profiles Section -->
+                <div class="community-profiles">
+                    <h3>Community & Coding Profiles</h3>
+                    <div class="profile-links">
+                        <a href="https://www.quora.com/profile/Harsh-Pardhi-17" target="_blank"
+                            class="profile-link glass">
+                            <i class="bi bi-quora"></i>
+                            <span>Quora</span>
+                        </a>
+                        <a href="https://www.reddit.com/user/Mother-Carpet-9204/" target="_blank"
+                            class="profile-link glass">
+                            <i class="bi bi-reddit"></i>
+                            <span>Reddit</span>
+                        </a>
+                        <a href="https://leetcode.com/u/Harshp6/" target="_blank" class="profile-link glass">
+                            <i class="bi bi-code-square"></i>
+                            <span>LeetCode</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -638,28 +886,8 @@
             <!-- Footer -->
             <footer>
                 <div class="left-part">
-                    <p>2025 @Harsh Pardhi, All Rights Reserved</p>
-                </div>
-                <div class="right-part">
-                    <div class="social-links">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="bi bi-twitter-x"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <p>© 2026 | Harsh Pardhi. All Rights Reserved</p>
+                    <p class="tagline">Building Scalable, Reliable & Automated Cloud Solutions</p>
                 </div>
             </footer>
         </div>

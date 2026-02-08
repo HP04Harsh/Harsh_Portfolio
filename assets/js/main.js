@@ -1,9 +1,12 @@
- $(document).ready(function () {
+$(document).ready(function () {
 
     // Add Active to Sidebar link when click
     $(".sidebar nav li a").click(function () {
         $(".sidebar nav li a").removeClass('active');
         $(this).addClass('active');
+        // Close sidebar on mobile after clicking a link
+        $('.homepage .sidebar').removeClass('active');
+        $('.hamburger-menu').removeClass('active');
     });
 
     // Click on Get Started to scroll down
@@ -14,16 +17,33 @@
         }, '100')
     });
 
-    $('.sidebar-toggle').click(function(){
-        $(this).toggleClass('active');
-        $('.homepage .sidebar').toggleClass('active')
-    })
+    // Hamburger Menu Toggle
+    $('#hamburgerMenu, #closeSidebar').click(function () {
+        $('.homepage .sidebar').toggleClass('active');
+        $('#hamburgerMenu').toggleClass('active');
+    });
 
-    // Initiate Typed js
+    // Close sidebar when clicking outside
+    $(document).click(function (event) {
+        if (!$(event.target).closest('.sidebar, #hamburgerMenu').length) {
+            $('.homepage .sidebar').removeClass('active');
+            $('#hamburgerMenu').removeClass('active');
+        }
+    });
+
+    // Initiate Typed js with Platform Engineering focus
     new Typed('#typed', {
-        strings: ["I'm Harsh Pardhi", 'Front End Developer', 'Backend Developer','Graphic Designer','AI Researcher'],
+        strings: [
+            "I'm Harsh Pardhi",
+            'Platform Engineer',
+            'DevOps Specialist',
+            'Cloud Architect',
+            'Software Engineer',
+            'Infrastructure Automation Expert'
+        ],
         typeSpeed: 80,
-
+        backSpeed: 50,
+        loop: true
     });
 
     // Init Image Filter
@@ -56,8 +76,27 @@
         $grid.isotope({ filter: filterValue });
     });
 
+    // Contact Form Email Integration
+    $('#sendEmailBtn').click(function () {
+        const name = $('#contactName').val();
+        const phone = $('#contactPhone').val();
+        const email = $('#contactEmail').val();
+        const subject = $('#contactSubject').val();
+        const message = $('#contactMessage').val();
+
+        if (!name || !email || !subject || !message) {
+            alert('Please fill in all required fields (Name, Email, Subject, and Message)');
+            return;
+        }
+
+        const emailBody = `Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+        const mailtoLink = `mailto:harshpardhi477@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+
+        window.location.href = mailtoLink;
+    });
+
 });
 
-$(window).on('load',function(){
+$(window).on('load', function () {
     $(".loading").addClass('endLoading').fadeOut(2000)
 })
